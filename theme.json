@@ -5,11 +5,11 @@
     "logo": "image",
     "favicon": "image",
     "bg": "image",
-    "booking_link": "string",
     "instagram": "string"
   },
   "pages": {
     "simple_content": {
+      "booking_link": "string",
       "title": "string",
       "sections": {
         "label": "string",
