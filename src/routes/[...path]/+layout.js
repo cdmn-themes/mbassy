@@ -1,7 +1,7 @@
 import { error } from '@sveltejs/kit'
 
-export function load({url}) {
-  return fetch(`API_URL/page?path=${url.pathname}`, {
+export async function load({url, parent}) {
+  const data = await fetch(`API_URL/page?path=${url.pathname}`, {
     headers: {
       'Authorization': `Bearer SITE_TOKEN`,
       'Accept': 'application/json'
@@ -9,4 +9,5 @@ export function load({url}) {
   })
   .then(res => res.json())
   .catch(e => {throw error(404, 'Not found')})
+  return Object.assign(data, {site: await parent()})
 }

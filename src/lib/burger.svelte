@@ -20,6 +20,7 @@
     top: 50%;
     width: 32px;
     height: 3px;
+    box-shadow: 0px 2px 0px -1px white;
     background-color: black;
     transition: all 400ms cubic-bezier(.84,.06,.52,1.8);
   }
