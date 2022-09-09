@@ -1,0 +1,21 @@
+{
+  "name": "Mbassy",
+  "schema": {
+    "title": "string",
+    "logo": "image",
+    "favicon": "image",
+    "bg": "image",
+    "booking_link": "string",
+    "instagram": "string"
+  },
+  "pages": {
+    "simple_content": {
+      "title": "string",
+      "sections": {
+        "label": "string",
+        "bg": "image",
+        "content": "html"
+      }
+    }
+  }
+}
