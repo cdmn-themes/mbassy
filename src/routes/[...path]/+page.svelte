@@ -6,14 +6,7 @@
   
   $: locale = $page.url.pathname == '/de' ? 'de' : 'en'
 
-  let booking_link, sections, instagram, contact
-  $: sections = data.content.sections
-  $: booking_link = data.content.booking_link
-  $: instagram = data.site.content.instagram
-  $: contact = data.content.contact
-
-  console.log(data)
-
+  $: ({booking_link, sections, instagram, contact} = data.content)
   
   function scrollToId(id) {
     open = false
