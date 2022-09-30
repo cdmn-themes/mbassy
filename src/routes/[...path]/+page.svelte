@@ -75,7 +75,7 @@
   {#each sections as section}
     <section class="relative min-h-screen" id={section.label}>
       {#if section.bg}
-        <div class="absolute top-0 left-0 w-full h-full bg-no-repeat bg-cover bg-center bg-fixed" style:background-image="url(/blobs/{section.bg}?w=1920)" />
+        <div class="absolute top-0 left-0 w-full h-full bg-no-repeat bg-cover bg-center bg-fixed" style:background-image="url(API_URL/attachments/{section.bg}?w=1920)" />
       {/if}
       <div class="content lg:w-700px bg-white/88 flex min-h-screen items-center py-26 px-11 lg:px-22 relative">
         <div class="w-full">
