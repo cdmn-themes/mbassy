@@ -87,6 +87,15 @@
 </main>
 
 <style>
+  .content :global(a[target="_blank"]) {
+    background-color: #000;
+    color: white;
+    padding: 0.5em 1em;
+  }
+  .content :global(a[target="_blank"])::after {
+    content: '↗';
+    margin-left: 0.5em;
+  }
   nav {
     left: -350px;
     transition: left 0.3s ease-out;
