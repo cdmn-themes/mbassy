@@ -81,7 +81,7 @@
       </div>
 
       {#if section.bg}
-        <div class="fixed -z-1 top-0 left-0 md:left-600px right-0 h-full bg-no-repeat bg-cover" style:background-image="url(API_URL/attachments/{section.bg}?w=1920)" />
+        <div class="fixed -z-1 top-0 left-0 md:left-600px right-0 h-full bg-no-repeat bg-center bg-cover" style:background-image="url(API_URL/attachments/{section.bg}?w=1920)" />
       {/if}
     </section>
   {/each}
