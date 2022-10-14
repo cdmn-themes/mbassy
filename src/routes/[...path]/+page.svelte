@@ -73,15 +73,16 @@
 
 <main class:open>
   {#each sections as section}
-    <section class="relative min-h-screen" id={section.label}>
-      {#if section.bg}
-        <div class="absolute top-0 left-0 w-full h-screen bg-no-repeat bg-cover bg-center bg-fixed" style:background-image="url(API_URL/attachments/{section.bg}?w=1920)" />
-      {/if}
-      <div class="content md:w-700px  flex min-h-screen items-center relative p-10 md:p-20">
+    <section class="relative min-h-screen" style:clip-path="polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%)" id={section.label}>
+      <div class="content md:w-600px  flex min-h-screen items-center relative p-9 md:p-0 md:bg-white">
         <div class="w-full bg-white/90 md:bg-white/80 py-26 px-11 md:px-22">
           {@html section.content}
         </div>
       </div>
+
+      {#if section.bg}
+        <div class="fixed -z-1 top-0 left-0 md:left-600px right-0 h-full bg-no-repeat bg-cover" style:background-image="url(API_URL/attachments/{section.bg}?w=1920)" />
+      {/if}
     </section>
   {/each}
 </main>
