@@ -5,6 +5,8 @@
     "logo": "image",
     "favicon": "image",
     "bg": "image",
+    "bg_video_portrait": "video",
+    "bg_video_landscape": "video",
     "instagram": "string"
   },
   "pages": {
@@ -15,7 +17,8 @@
         "label": "string",
         "bg": "image",
         "content": "html"
-      }
+      },
+      "contact": "html"
     }
   }
 }
