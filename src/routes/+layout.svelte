@@ -25,9 +25,9 @@
   
   <button on:click={() => muted =! muted} class="fixed bottom-4 right-4 w-10 h-10 flex justify-center items-center z-1">
     {#if muted}
-    <span class="text-20px i-clarity:volume-mute-solid"></span>
+    <span class="text-20px i-ion:volume-mute-outline"></span>
     {:else}
-    <span class="text-20px i-clarity:volume-up-solid"></span>
+    <span class="text-20px i-ion:volume-high-outline"></span>
     {/if}
   </button>
   
@@ -40,9 +40,9 @@
 
   <button on:click={() => muted =! muted} class="fixed bottom-4 right-4 w-10 h-10 flex justify-center items-center z-1">
     {#if muted}
-    <span class="text-20px i-clarity:volume-mute-solid"></span>
+    <span class="text-20px i-ion:volume-mute-outline"></span>
     {:else}
-    <span class="text-20px i-clarity:volume-up-solid"></span>
+    <span class="text-20px i-ion:volume-high-outline"></span>
     {/if}
   </button>
 {/if}
