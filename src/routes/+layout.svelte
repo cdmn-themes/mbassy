@@ -30,7 +30,7 @@
 
 <div class="h-screen flex flex-col items-center justify-center">
   {#if logo}
-    <img src="API_URL/attachments/{logo}?w=310" alt="Logo" class="" />
+    <!-- <img src="API_URL/attachments/{logo}?w=310" alt="Logo" class="" /> -->
   {/if}
 </div>
 

@@ -7,6 +7,7 @@
   $: locale = $page.url.pathname == '/de' ? 'de' : 'en'
 
   $: ({booking_link, sections, contact} = data.content)
+  $: ({logo} = data.site.content)
   $: ({instagram} = data.site.content)
   function scrollToId(id) {
     open = false
@@ -41,6 +42,9 @@
 
 <nav class:open class="text-xl fixed top-0 left-0 w-350px bg-white h-full z-100 flex justify-center flex-col pl-6">
   <div class="relative">
+    {#if logo}
+      <img src="API_URL/attachments/{logo}?w=310" alt="Logo" class="h-26 md:h-36 lg:h-44" />
+    {/if}
     {#each sections || [] as section}
       <a on:click|preventDefault={scrollToId(section.label)} href="#{section.label}" class="block py-3">
         {section.label}
