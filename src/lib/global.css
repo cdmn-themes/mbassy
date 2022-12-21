@@ -50,3 +50,10 @@ nav p {
   margin-bottom: 0.2em;
   font-size: 0.8em;
 }
+button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+
+  cursor: pointer;
+}
