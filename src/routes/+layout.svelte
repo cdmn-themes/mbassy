@@ -19,7 +19,7 @@
 {/if}
 
 {#if bg_video_portrait}
-  <video autoplay md:hidden {muted} loop playsinline class="fixed -z-1 w-full h-screen object-cover">
+  <video autoplay {muted} loop playsinline class="md:hidden fixed -z-1 w-full h-screen object-cover">
     <source src="API_URL/attachments/{bg_video_portrait}" type="video/mp4" />
   </video>
   
@@ -34,7 +34,7 @@
 {/if}
 
 {#if bg_video_landscape}
-  <video autoplay hidden md:block {muted} loop playsinline class="fixed -z-1 w-full h-screen object-cover">
+  <video autoplay  {muted} loop playsinline class="hidden md:block fixed -z-1 w-full h-screen object-cover">
     <source src="API_URL/attachments/{bg_video_landscape}" type="video/mp4" />
   </video>
 
