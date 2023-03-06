@@ -34,7 +34,7 @@
     {/if}
   </a>
   {#if locale == 'de'}
-    <a href='/' class="inline-block px-7 py-2 hover:bg-white text-white bg-black hover:text-black">EN</a>
+    <a href='/en' class="inline-block px-7 py-2 hover:bg-white text-white bg-black hover:text-black">EN</a>
   {:else}
     <a href='/de' class="inline-block px-7 py-2 hover:bg-white text-white bg-black hover:text-black">DE</a>
   {/if}
