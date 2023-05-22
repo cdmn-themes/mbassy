@@ -78,8 +78,8 @@
 <main class:open>
   {#each sections as section}
     <section class="relative min-h-screen" style:clip-path="polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%)" id={section.label}>
-      <div class="content md:w-600px  flex min-h-screen items-center relative p-9 md:p-0 md:bg-white">
-        <div class="w-full bg-white/90 md:bg-white/80 py-26 px-11 md:px-22">
+      <div class="content md:w-600px  flex min-h-screen items-center relative px-9 py-64 md:p-0 md:bg-white">
+        <div class="w-full bg-white/65 md:bg-white/80 py-26 px-11 md:px-22">
           {@html section.content}
         </div>
       </div>
